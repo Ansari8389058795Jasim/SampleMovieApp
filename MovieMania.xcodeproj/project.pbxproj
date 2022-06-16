@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		04A87DD9285AED3100F03E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A87DD7285AED3100F03E8D /* Main.storyboard */; };
 		04A87DDB285AED3500F03E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A87DDA285AED3500F03E8D /* Assets.xcassets */; };
 		04A87DDE285AED3500F03E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A87DDC285AED3500F03E8D /* LaunchScreen.storyboard */; };
+		04A87DF6285B132D00F03E8D /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A87DF5285B132D00F03E8D /* Connectivity.swift */; };
+		04A87DF9285B139600F03E8D /* SharedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A87DF8285B139600F03E8D /* SharedClass.swift */; };
+		B02ACCD930C4BEF4D0184E00 /* Pods_MovieMania.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15D5D55FDB8A66318FC1434 /* Pods_MovieMania.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		04A87DDA285AED3500F03E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A87DDD285AED3500F03E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A87DDF285AED3500F03E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A87DF5285B132D00F03E8D /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		04A87DF8285B139600F03E8D /* SharedClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedClass.swift; sourceTree = "<group>"; };
+		A12E541B15DC5AD2D313F761 /* Pods-MovieMania.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMania.release.xcconfig"; path = "Target Support Files/Pods-MovieMania/Pods-MovieMania.release.xcconfig"; sourceTree = "<group>"; };
+		D3628320FA7E25D7918A3C0D /* Pods-MovieMania.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieMania.debug.xcconfig"; path = "Target Support Files/Pods-MovieMania/Pods-MovieMania.debug.xcconfig"; sourceTree = "<group>"; };
+		F15D5D55FDB8A66318FC1434 /* Pods_MovieMania.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieMania.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02ACCD930C4BEF4D0184E00 /* Pods_MovieMania.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				04A87DD0285AED3100F03E8D /* MovieMania */,
 				04A87DCF285AED3100F03E8D /* Products */,
+				A10C15B580D0B5CA5D2C33D7 /* Pods */,
+				FE4505050C06A4D78E36C5E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				04A87DD1285AED3100F03E8D /* AppDelegate.swift */,
+				04A87DF5285B132D00F03E8D /* Connectivity.swift */,
 				04A87DD3285AED3100F03E8D /* SceneDelegate.swift */,
+				04A87DF8285B139600F03E8D /* SharedClass.swift */,
 				04A87DD5285AED3100F03E8D /* ViewController.swift */,
 				04A87DD7285AED3100F03E8D /* Main.storyboard */,
 				04A87DDA285AED3500F03E8D /* Assets.xcassets */,
@@ -67,6 +80,23 @@
 			path = MovieMania;
 			sourceTree = "<group>";
 		};
+		A10C15B580D0B5CA5D2C33D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3628320FA7E25D7918A3C0D /* Pods-MovieMania.debug.xcconfig */,
+				A12E541B15DC5AD2D313F761 /* Pods-MovieMania.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE4505050C06A4D78E36C5E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F15D5D55FDB8A66318FC1434 /* Pods_MovieMania.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A87DE2285AED3500F03E8D /* Build configuration list for PBXNativeTarget "MovieMania" */;
 			buildPhases = (
+				FA51185511579C11167D11ED /* [CP] Check Pods Manifest.lock */,
 				04A87DCA285AED3100F03E8D /* Sources */,
 				04A87DCB285AED3100F03E8D /* Frameworks */,
 				04A87DCC285AED3100F03E8D /* Resources */,
+				ED0A45DAEA91D4EE12B35B4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +164,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ED0A45DAEA91D4EE12B35B4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieMania/Pods-MovieMania-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieMania/Pods-MovieMania-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieMania/Pods-MovieMania-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA51185511579C11167D11ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieMania-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04A87DCA285AED3100F03E8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +213,8 @@
 			files = (
 				04A87DD6285AED3100F03E8D /* ViewController.swift in Sources */,
 				04A87DD2285AED3100F03E8D /* AppDelegate.swift in Sources */,
+				04A87DF6285B132D00F03E8D /* Connectivity.swift in Sources */,
+				04A87DF9285B139600F03E8D /* SharedClass.swift in Sources */,
 				04A87DD4285AED3100F03E8D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +359,7 @@
 		};
 		04A87DE3285AED3500F03E8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3628320FA7E25D7918A3C0D /* Pods-MovieMania.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +379,7 @@
 		};
 		04A87DE4285AED3500F03E8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12E541B15DC5AD2D313F761 /* Pods-MovieMania.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
